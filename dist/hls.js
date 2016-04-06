@@ -7103,11 +7103,11 @@ var MP4Remuxer = function () {
           this.remuxAudio(audioTrack, timeOffset, contiguous);
         }
       }
-      //logger.log('nb ID3 samples:' + audioTrack.samples.length);
+      logger.log('nb ID3 samples:' + audioTrack.samples.length);
       if (id3Track.samples.length) {
         this.remuxID3(id3Track, timeOffset);
       }
-      //logger.log('nb ID3 samples:' + audioTrack.samples.length);
+      logger.log('nb2 ID3 samples:' + audioTrack.samples.length);
       if (textTrack.samples.length) {
         this.remuxText(textTrack, timeOffset);
       }
